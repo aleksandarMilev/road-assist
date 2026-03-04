@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aleksandarmilev.github.io/road-assist/sitemap.xml
