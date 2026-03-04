@@ -61,6 +61,18 @@
     });
   });
 
+  const openMailClient = (mailtoUrl) => {
+    const mailLink = document.createElement("a");
+    mailLink.href = mailtoUrl;
+    mailLink.target = "_blank";
+    mailLink.rel = "noopener noreferrer";
+    mailLink.style.display = "none";
+
+    document.body.appendChild(mailLink);
+    mailLink.click();
+    mailLink.remove();
+  };
+
   const form = $("[data-contact-form]");
   if (form) {
     const note = $("[data-form-note]");
@@ -96,7 +108,8 @@
       );
 
       const to = "info@roadassist24.example";
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      const mailtoUrl = `mailto:${to}?subject=${subject}&body=${body}`;
+      openMailClient(mailtoUrl);
 
       setTimeout(
         () => setNote("Ако не се отвори email, обадете се на 0888 123 456."),
