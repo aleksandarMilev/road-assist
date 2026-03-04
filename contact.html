@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Контакти за пътна помощ в София | RoadAssist24</title>
+    <title>Контакти за пътна помощ в [Град] | [Име на фирма]</title>
     <meta
       name="description"
-      content="Контакти за пътна помощ в София. Обадете се на [Телефон] или използвайте Viber и WhatsApp за бърза връзка."
+      content="Контакти за пътна помощ в [Град]. Обадете се на [Телефон], пишете по Viber или WhatsApp и отворете локацията директно в Maps."
     />
     <link
       rel="canonical"
@@ -14,11 +14,11 @@
     />
     <meta
       property="og:title"
-      content="Контакти за пътна помощ в София | RoadAssist24"
+      content="Контакти за пътна помощ в [Град] | [Име на фирма]"
     />
     <meta
       property="og:description"
-      content="Контакти за пътна помощ в София. Обадете се на [Телефон] или използвайте Viber и WhatsApp за бърза връзка."
+      content="Контакти за пътна помощ в [Град]. Обадете се на [Телефон], пишете по Viber или WhatsApp и отворете локацията директно в Maps."
     />
     <meta
       property="og:url"
@@ -28,12 +28,14 @@
     <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
-      content="Контакти за пътна помощ в София | RoadAssist24"
+      content="Контакти за пътна помощ в [Град] | [Име на фирма]"
     />
     <meta
       name="twitter:description"
-      content="Контакти за пътна помощ в София. Обадете се на [Телефон] или използвайте Viber и WhatsApp за бърза връзка."
+      content="Контакти за пътна помощ в [Град]. Обадете се на [Телефон], пишете по Viber или WhatsApp и отворете локацията директно в Maps."
     />
+    <meta name="theme-color" content="#f35b31" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
@@ -42,7 +44,7 @@
         <a class="brand" href="index.html" aria-label="Начало">
           <span class="brand-mark">RA</span>
           <span class="brand-text">
-            <strong>RoadAssist24</strong>
+            <strong>[Име на фирма]</strong>
             <small>Пътна помощ 24/7</small>
           </span>
         </a>
@@ -61,7 +63,7 @@
           <a href="services.html" data-navlink>Услуги</a>
           <a href="prices.html" data-navlink>Цени</a>
           <a href="contact.html" data-navlink>Контакти</a>
-          <a class="btn btn-primary btn-sm nav-cta" href="tel:+359888123456"
+          <a class="btn btn-primary btn-sm nav-cta" href="tel:[Телефон]"
             >Обади се</a
           >
         </nav>
@@ -71,9 +73,10 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <h1>Контакти за пътна помощ в София</h1>
+          <h1>Контакти за пътна помощ в [Град]</h1>
           <p class="lead">
-            За най-бързо — обадете се. Ако не е спешно, пишете ни.
+            За най-бързо съдействие се свържете директно по телефон. Ако е
+            удобно, изпратете локация и снимка по чат приложение.
           </p>
         </div>
       </section>
@@ -98,7 +101,7 @@
               </div>
 
               <div class="contact-item">
-                <span class="label">Email</span>
+                <span class="label">Имейл</span>
                 <a class="strong" href="mailto:info@roadassist24.example"
                   >info@roadassist24.example</a
                 >
@@ -106,30 +109,43 @@
 
               <div class="contact-item">
                 <span class="label">Работно време</span>
-                <span class="strong" data-open-status>Денонощно (пример)</span>
-                <span class="muted">*Ако не сте 24/7, сменете текста.</span>
+                <span class="strong">24/7 (пример)</span>
+                <span class="muted">
+                  Потвърждаваме наличност според локацията и безопасния достъп.
+                </span>
               </div>
 
               <div class="contact-item">
                 <span class="label">Район</span>
-                <span class="strong">София и област (пример)</span>
+                <span class="strong">[Град] и област</span>
               </div>
             </div>
 
             <div class="info-strip small">
               <div>
-                <strong>Съвет:</strong> кажете локация + модел/тип автомобил +
+                <strong>Какво помага:</strong> изпратете адрес, квартал или
+                live location, модел на автомобила и кратко описание на
                 проблема.
               </div>
             </div>
 
             <div class="map-embed card-inner">
               <div class="map-placeholder">
-                <strong>Карта</strong>
+                <strong>Локация и ориентация</strong>
                 <p class="muted">
-                  Тук можеш да сложиш Google Maps iframe, когато имате
-                  адрес/точка.
+                  Отворете [Град] в Google Maps или изпратете директно вашата
+                  текуща локация по Viber/WhatsApp.
                 </p>
+                <div class="card-actions map-actions">
+                  <a
+                    class="btn btn-outline"
+                    href="https://www.google.com/maps/search/?api=1&query=[Град]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Отвори в Maps</a
+                  >
+                  <a class="btn btn-ghost" href="[VIBER_LINK]">Изпрати локация</a>
+                </div>
               </div>
             </div>
           </div>
@@ -137,10 +153,11 @@
           <div class="card">
             <h2>Обади се или пиши в чат</h2>
             <p class="muted">
-              За най-бързо съдействие — обадете се.
+              За най-бързо съдействие — обадете се. За удобство може да изпратите
+              и кратко описание с локация в чат.
             </p>
 
-            <div class="card-actions">
+            <div class="card-actions quick-actions">
               <a class="btn btn-primary" href="tel:[Телефон]"
                 >Обади се: [Телефон]</a
               >
@@ -148,10 +165,18 @@
               <a class="btn btn-ghost" href="[WHATSAPP_LINK]">WhatsApp</a>
             </div>
 
-            <div class="info-strip small">
-              <div>
-                <strong>Бърз съвет:</strong> изпратете локация, модел на
-                автомобила и кратко описание на проблема.
+            <div class="quick-points">
+              <div class="contact-item">
+                <span class="label">Кога да звъннете</span>
+                <span class="strong">При спешност, блокирал автомобил или нужда от превоз</span>
+              </div>
+              <div class="contact-item">
+                <span class="label">Какво уточняваме</span>
+                <span class="strong">Район, тип автомобил, проблем и ориентировъчен час</span>
+              </div>
+              <div class="contact-item">
+                <span class="label">Какво получавате</span>
+                <span class="strong">Насока, времеви диапазон и прозрачно ценово уточнение</span>
               </div>
             </div>
           </div>
@@ -165,12 +190,12 @@
           <div class="brand small">
             <span class="brand-mark">RA</span>
             <span class="brand-text">
-              <strong>RoadAssist24</strong>
+              <strong>[Име на фирма]</strong>
               <small>Пътна помощ 24/7</small>
             </span>
           </div>
           <p class="muted">
-            © <span data-year></span> RoadAssist24. Всички права запазени.
+            © <span data-year></span> [Име на фирма]. Всички права запазени.
           </p>
         </div>
 
@@ -186,14 +211,18 @@
           <div>
             <h4>Контакт</h4>
             <a href="tel:[Телефон]">[Телефон]</a>
-            <a href="mailto:info@roadassist24.example"
-              >info@roadassist24.example</a
-            >
-            <span class="muted">София и област (пример)</span>
+            <a href="mailto:info@roadassist24.example">info@roadassist24.example</a>
+            <span class="muted">[Град] и област</span>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="mobile-callbar" aria-label="Бързи действия">
+      <a class="mobile-callbar-primary" href="tel:[Телефон]">Обади се</a>
+      <a class="mobile-callbar-link" href="[VIBER_LINK]">Viber</a>
+      <a class="mobile-callbar-link" href="[WHATSAPP_LINK]">WhatsApp</a>
+    </div>
 
     <script src="assets/js/main.js" defer></script>
   </body>
